@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="./styles.css" media="screen" />
+</head>
+
+<body>
+    <div class="calc_box">
+        <div class="screen">
+            <div id="screen_content">
+                
+            </div>
+        </div>
+        <div class="keyBoard">
+            <div class="handler_box">
+                <div class="btn_large" id="delete">DEL</div>
+                <div class="btn_large" id="clear" onclick="clear()">CLEAR</div>
+            </div>
+            <div class="digits_operations">
+                <div class="btn" id="bracketOpen" onclick="capture(this)">(</div>
+                <div class="btn" id="bracketClose" onclick="capture(this)">)</div>
+                <div class="btn" id="square" onclick="capture(this)">√</div>
+                <div class="btn" id="pi" onclick="capture(this)">π</div>
+                <div class="btn" id="pow" onclick="capture(this)">&Hat;</div>
+                <div class="btn" id="seven" onclick="capture(this)">7</div>
+                <div class="btn" id="eigth" onclick="capture(this)">8</div>
+                <div class="btn" id="nine" onclick="capture(this)">9</div>
+                <div class="btn" id="divided" onclick="capture(this)">/</div>
+                <div class="btn" id="multiplied" onclick="capture(this)">x</div>
+                <div class="btn" id="four" onclick="capture(this)">4</div>
+                <div class="btn" id="five" onclick="capture(this)">5</div>
+                <div class="btn" id="six" onclick="capture(this)">6</div>
+                <div class="btn" id="sum" onclick="capture(this)">+</div>
+                <div class="btn" id="subtract" onclick="capture(this)">-</div>
+                <div class="btn" id="one" onclick="capture(this)">1</div>
+                <div class="btn" id="two" onclick="capture(this)">2</div>
+                <div class="btn" id="three" onclick="capture(this)">3</div>
+                <div class="btn green" id="calc" onclick="calcular()">=</div>
+                <div class="btn" id="dot" onclick="capture(this)">.</div>          
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="./javascript.js"></script>
+</html>
