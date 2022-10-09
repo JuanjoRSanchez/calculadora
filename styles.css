@@ -6,7 +6,7 @@ body {
 
 .calc_box {
     width: 400px;
-    height: 600px;
+    height: 650px;
     background-color: rgb(59, 44, 21);
     border-radius: 20px;
     display: flex;
@@ -23,22 +23,34 @@ body {
     background-color: aliceblue;
     border-radius: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    
+    flex-wrap: wrap;
+    overflow: hidden;
+
 
 }
-.screen>div{
-    width: 350px;
-    height: 80px;
-    font-size: 3em;
+
+.screen_content{
+    width: 100%;
+    height: auto;
+    font-size: 1.5em;
     text-align: right;
-
+    word-wrap: break-word;
+    overflow: hidden;
+    padding-right: 15px;
 }
 
+.content{
+    color: rgb(163, 161, 161);
+}
+
+.imput{
+
+}
 .keyBoard {
     width: 380px;
-    height: 430px;
+    height: 500px;
     background-color: rgb(49, 130, 201);
     border-radius: 20px 20px 20px 20px;
     display: flex;
@@ -49,9 +61,9 @@ body {
 
 }
 
-.digits_operations{
+.digits_operations {
     width: 380px;
-    height: 300px;
+    height: 350px;
     background-color: aliceblue;
     display: flex;
     justify-content: space-around;
@@ -64,7 +76,7 @@ body {
 
 }
 
-.handler_box{
+.handler_box {
     width: 380px;
     height: 70px;
     background-color: rgb(38, 115, 184);
@@ -76,7 +88,7 @@ body {
     gap: 10px;
 }
 
-.btn{
+.btn {
     width: 60px;
     height: 60px;
     background-color: rgb(173, 167, 167);
@@ -87,17 +99,35 @@ body {
     color: aliceblue;
 }
 
-.btn_large{
-    width: 150px;
+.btn_calc{
+    width: 135px;
     height: 60px;
-    background-color: brown;
+    background-color: rgb(12, 114, 21);    
     border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: aliceblue;
 }
+
+.btn_large {
+    width: 135px;
+    height: 60px;
+    background-color: rgb(173, 167, 167);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+
+.btn,
+.btn_calc,
+.btn_large:hover {
+    cursor: pointer;
+}
+
 /* colors */
-.green{
+.green {
     background-color: rgb(12, 114, 21);
 }
